@@ -29,75 +29,60 @@ body {
 	font-size: 16px;
 	line-height: 22px;
 }
-h1, h2, h3, h4, h5, h6 {
+h1 {
+	text-align: center;
+}
+h2, h3, h4, h5, h6 {
 	font-weight: normal;
 	padding: 0 0 0 0;
 	margin: 0 0 0 0;
- 	text-align: center;
+ 	text-align: left;
 }
 a:link, a:visited,
 a:active {
-	color: #8a8a8a;
+	color: #000000;
 	text-decoration: none;
 }
 a:hover {
-	color: #141411;
-}
-.circle {
-	background: #FFFFFF;
-	display: block;
-	height: 180px;
-	width: 180px;
-	padding: 0 0 0 0;
-	margin: 0 0 0 0; /* Negative brings posts up to bottom of circle */
-	border: 3px solid #8a8a8a;
-	border-radius: 90px; /* circle */
-	-webkit-border-radius: 90px; /* circle */
-	-moz-border-radius: 90px; /* circle */
+	color: #000000;
+	text-decoration: underline;
 }
 /* End Universal Styles */
 /* Main Posts Styles */
-.banner {
-	background: url(images/banner.png);
-	height: 52px;
-	padding: 0px 0 0px 0px;
-	margin: 30px 0 -30px 0;
-	border: 0px solid #ff0000;
-}
-#container {
-	width: 1000px;
-	margin: 0 auto 0 auto;
-}
-.title {
-	font-size: 20pt;
+.blogtitle {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+	font-size: 55px;
+	line-height: .75em;
 	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+ 	text-align: right;
+ 	text-transform: uppercase;	
 }
-.coin {
-	color: #141411;
-	font-weight: normal;
- 	font-size: 50pt;
- 	line-height: .75em;
-	text-align: center;
-	height: 150px;
-	padding: 30px 0 0px 0px;
-	margin: 0 auto -180px auto; /* Negative brings posts up to bottom of circle */
-	top: -178px; /* Negative brings circle up to top of page */
-	position: relative;
+.description {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 1em;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+ 	text-align: right;
+ 	text-transform: uppercase;	
 }
 .nav-box {
 	margin: 0 0 0 0;
 	padding: 40px 0px 20px 0;
 }
 .container-fluid {
-	background-color: #94dd7a;
-	padding: 0 0 0 0;
+	background-color: #ffffff;
+	padding: 3% 3% 3% 3%;
 	margin: 0 0 0 0;
 	border: 0px solid #ff0000;
 }
 #content {
 	background-color: #FFF;
-	padding: 3% 3% 3% 3%;
-	margin: 20px 20px 20px 20px;
+	padding: 20px 0 0 0;
+	margin: 0px 0px 0px 0px;
 	border: 0px solid #ff0000;
 }
 #block-text {
@@ -142,6 +127,8 @@ a:hover {
 	border: 0px;
 }
 .navbar .navbar-inner {
+	font-family: 'Fenix', serif;
+	text-transform: uppercase;
 	font-size: 20px;
 	background-color: transparent;
 	background-image: none;
@@ -157,7 +144,7 @@ a:hover {
 }
 .navbar .brand,
 .navbar .nav > li > a {
-	color: #777777;
+	color: #000000;
 	text-shadow: none;
 	padding: 0 25px 0 25px;
 }
@@ -166,22 +153,22 @@ a:hover {
 .navbar .nav > li > a:hover,
 .navbar .brand:focus,
 .navbar .nav > li > a:focus {
-	color: #777777;
+	color: #000000;
 	text-shadow: none;
 	text-decoration: underline;
 }
 .navbar .brand {
-	color: #777777;
+	color: #000000;
 	text-shadow: none;
 	border-right: 2px solid #777777; /* add border-right on first nav button left */
 }
 .navbar .navbar-text {
-	color: #777777;
+	color: #000000;
 	text-shadow: none;
 }
 .nav li {
 	background-color: transparent;
-	color: #777777;
+	color: #000000;
 	border-radius: 0px;
 	padding: 0 0 0 0;
 	margin: 0 0 0 0;
