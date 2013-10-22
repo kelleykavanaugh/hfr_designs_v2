@@ -1,317 +1,245 @@
 /*
-Theme Name: HFR DESIGNS
+Theme Name: HFR DESIGNS 2.0
 Theme URI: http://www.hfrdesigns.com/
-Description: An easy to use, simple, elegant website for displaying the design work of HFR Designs.
-Version: 1.0 
+Description: A simplified design for HFR Designs. Widgetized Etsy Store, focus on the products.
+Version: 2.0 
 Author: Kelley Kavanaugh
 Author URI: http://www.kelleykavanaugh.com/
-Tags: fixed position, black background, clean, modern, simple, etsy
+Tags: responsive, simple, white, black, etsy
 */
 
+@import url('bootstrap/css/bootstrap.css'); 
+@import url('bootstrap/css/bootstrap-responsive.css');
 
-/* Begin Structure */
-#header {
-	background: url("./images/banner.jpg") no-repeat;
-	width: 915px;
-	height: 125px;
-	display: block;
-	}
-#title {
-	background-image: none;
+/* wordpress image styles */
+img.alignright {float:right; margin:0 0 1em 1em}
+img.alignleft {float:left; margin:0 1em 1em 0}
+img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+a img.alignright {float:right; margin:0 0 1em 1em}
+a img.alignleft {float:left; margin:0 1em 1em 0}
+a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+/* End wordpress image styles */
+/* Universal Styles */
+body { 
+	background: url(images/background.jpg);
+	background-color: #FFFFFF;
+	color: #141411;
+	font-weight: 300;
+	text-align: justify;
+	font-size: 16px;
+	line-height: 22px;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	padding: 0 0 0 0;
 	margin: 0 0 0 0;
-	padding: 25px 0 0 0;
-	text-align: center;
-	font-family: "CenturyGothic", "Century Gothic";
-	font-size: 60px;
-	font-weight: bold;
-	}
-
-#description {
-	background-image: none;
-	margin: 0 0 0 0;
-	padding: 50px 0 0 0;
-	text-align: center;
-	font-family: "CenturyGothic", "Century Gothic";
-	font-size: 36px;
-	}
-body {
-	margin: 0 0 0 0;
-	padding: 0;
-	}
-
-#page {
-	margin: auto;
-	margin-top: 0px;
-	padding: 0;
-	width: 915px;
-	border: 0px solid #F00;
-	}
-
-#navigation {
-	background: url("./images/navigation.jpg") no-repeat;
-	border: 0px solid #F00;
-	text-transform: lowercase;
-	float: left;
-	padding: 0px 0 0 0;
-	margin: 0px 0px 0px 0px;
-	width: 915px;
-	height: 32px;
-	text-align: center;
-	font-family: "CenturyGothic", "Century Gothic";
-	font-size: 24px;
-	font-weight: none;
-	}
-#navigation a {
+ 	text-align: center;
+}
+a:link, a:visited,
+a:active {
+	color: #8a8a8a;
 	text-decoration: none;
-	}
-#navigation a:hover {
-	color: #FFF;
-	text-decoration: underline;
-	}
-#wrapper {
-	background: url("./images/background.jpg");
-	color: #FFF;
-	width: 915px;
-	float: left;
-	border: 0px solid #F00;
+}
+a:hover {
+	color: #141411;
+}
+.circle {
+	background: #FFFFFF;
+	display: block;
+	height: 180px;
+	width: 180px;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0; /* Negative brings posts up to bottom of circle */
+	border: 3px solid #8a8a8a;
+	border-radius: 90px; /* circle */
+	-webkit-border-radius: 90px; /* circle */
+	-moz-border-radius: 90px; /* circle */
+}
+/* End Universal Styles */
+/* Main Posts Styles */
+.banner {
+	background: url(images/banner.png);
+	height: 52px;
+	padding: 0px 0 0px 0px;
+	margin: 30px 0 -30px 0;
+	border: 0px solid #ff0000;
+}
+#container {
+	width: 1000px;
 	margin: 0 auto 0 auto;
-	clear: both;
-	}
-#logo {
-	background-image: url("./images/logo.png")
-	width: 334px;
-	height: 334px;
+}
+.title {
+	font-size: 20pt;
+	padding: 0 0 0 0;
+}
+.coin {
+	color: #141411;
+	font-weight: normal;
+ 	font-size: 50pt;
+ 	line-height: .75em;
+	text-align: center;
+	height: 150px;
+	padding: 30px 0 0px 0px;
+	margin: 0 auto -180px auto; /* Negative brings posts up to bottom of circle */
+	top: -178px; /* Negative brings circle up to top of page */
+	position: relative;
+}
+.nav-box {
 	margin: 0 0 0 0;
-	border: 1px solid #F00;
-	}
-#column {
-	background: url("./images/column.png");
-	border: 0px solid #fcff00;
-	color: #000;
-	float: left;
-	text-align: justify;
-	margin: 40px 0px 0px 130px;
-	padding: 30px 30px 30px 30px;
-	width: 600px;
-	}
-#column_wide {
-	background: url("./images/column.png");
-	border: 0px solid #fcff00;
-	color: #000;
-	float: left;
-	text-align: justify;
-	margin: 40px 0px 0px 77.5px;
-	padding: 30px 30px 30px 30px;
-	width: 700px;
-	}
+	padding: 40px 0px 20px 0;
+}
+.container-fluid {
+	background-color: #94dd7a;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	border: 0px solid #ff0000;
+}
+#content {
+	background-color: #FFF;
+	padding: 3% 3% 3% 3%;
+	margin: 20px 20px 20px 20px;
+	border: 0px solid #ff0000;
+}
+#block-text {
+  padding: 0 30px 0 30px;
+  margin: 0 0 0 0;
+  font-size: 17.5px;
+  font-weight: 300;
+  line-height: 1.25;
+}
+#posts {
+	padding: 0 3% 0 3%;
+	margin: 0px 20px 0px 20px;
+}
+.border-bottom {
+	border-bottom: dashed 2px #e5ade2;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+	clear: both;
+}
+#sidebar li.widget {
+   list-style: none;
+   padding: 0 0 0 0;
+}
 #footer {
-	background: none;
-	border: 0px solid #F00;
-	color: #000;
-	float: left;
-	padding: 20px 0 0 0;
-	margin: 0px 0px 0px 0px;
-	width: 915px;
-	height: 32px;
-	text-align: center;
-	font-family: "CenturyGothic", "Century Gothic";
-	font-size: 24px;
-	font-weight: none;
-	}
-#footer a {
-	color: #000;
-	text-decoration: none;
-	}
+	color: #777777;
+	height: 20px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 20px 0px 20px;
+}
+#footer a, #footer a:hover, #footer a:active, #footer a:visited {
+	color: #777777;
+}
 #footer a:hover {
-	color: #000;
 	text-decoration: underline;
-	}
-/* End Structure */
-
-
-/* Begin Typography & Colors */
-body {
-	font-size: 62.5%; /* Resets 1em to 10px */
-	line-height: 1.6em;
-	font-family: "MyriadPro-Condensed", "Myriad Pro Condensed", "MyriadPro-regular", "Myriad Pro Regular", MyriadPro, "Myriad Pro", Helvetica, Arial, sans-serif;
-	background: #000;
+}
+/* End Main Posts Styles */
+/* Navbar Styling */
+.navbar {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
 	color: #FFF;
-	text-align: center;
-	}
-
-#page {
-	background-color: #000;
-	border: 0px solid;
-	text-align: left;
-	font-size: 1.5em;
-	}
-h2 {
-	color: #000;
-	font-size: 1.5em;
-	margin: 0 0 10px 0;
-	text-align: center;
-	}
-small {
-	font-family: "MyriadPro-Regular", "Myriad Pro Regular", MyriadPro, "Myriad Pro", Helvetica, Arial, sans-serif;
-	font-size: 0.9em;
-	line-height: 1.5em;
-	}
-a, a:hover, a:visited, a:active {
-	color: #FFF;
-	}
-
-/* End Typography & Colors */
-
-
-/* Begin Images */
-p img {
-	padding: 0;
-	max-width: 100%;
-	}
-
-/*	Using 'class="alignright"' on an image will (who would've
-	thought?!) align the image to the right. And using 'class="centered',
-	will of course center the image. This is much better than using
-	align="center", being much more futureproof (and valid) */
-
-img.centered {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	}
-
-img.alignright {
-	padding: 4px;
-	margin: 0 0 2px 7px;
-	display: inline;
-	}
-
-img.alignleft {
-	padding: 4px;
-	margin: 0 7px 2px 0;
-	display: inline;
-	}
-
-.alignright {
-	float: right;
-	}
-
-.alignleft {
-	float: left;
-	}
-/* End Images */
-
-
-
-/* Begin Lists
-
-	Special stylized non-IE bullets
-	Do not work in Internet Explorer, which merely default to normal bullets. */
-
-html>body .entry ul {
-	margin-left: 0px;
-	padding: 0 0 0 30px;
-	list-style: none;
-	padding-left: 10px;
-	text-indent: -10px;
-	}
-
-html>body .entry li {
-	margin: 7px 0 8px 10px;
-	}
-
-.entry ul li:before {
-	content: "\00BB \0020";
-	}
-
-.entry ol {
-	padding: 0 0 0 35px;
-	margin: 0;
-	}
-
-.entry ol li {
-	margin: 0;
-	padding: 0;
-	}
-
-.postmetadata ul, .postmetadata li {
-	display: inline;
-	list-style-type: none;
-	list-style-image: none;
-	}
-/* End Entry Lists */
-
-
-/* Begin Various Tags & Classes */
-acronym, abbr, span.caps {
-	cursor: help;
-	}
-
-acronym, abbr {
-	border-bottom: 1px dashed #999;
-	}
-
-blockquote {
-	margin: 15px 30px 0 10px;
-	padding-left: 20px;
-	border-left: 5px solid #ddd;
-	}
-
-blockquote cite {
-	margin: 5px 0 0;
-	display: block;
-	}
-
-.center {
-	text-align: center;
-	}
-
-.hidden {
-	display: none;
-	}
-	
-.screen-reader-text {
-     position: absolute;
-     left: -1000em;
+	border: 0px;
+}
+.navbar .navbar-inner {
+	font-size: 20px;
+	background-color: transparent;
+	background-image: none;
+	background-repeat: no-repeat;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	border: 0px solid #fff600;
+	border-radius: 0px;
+    line-height: 1em;
+	min-height: 20px;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+.navbar .brand,
+.navbar .nav > li > a {
+	color: #777777;
+	text-shadow: none;
+	padding: 0 25px 0 25px;
 }
 
-hr {
-	display: none;
+.navbar .brand:hover,
+.navbar .nav > li > a:hover,
+.navbar .brand:focus,
+.navbar .nav > li > a:focus {
+	color: #777777;
+	text-shadow: none;
+	text-decoration: underline;
+}
+.navbar .brand {
+	color: #777777;
+	text-shadow: none;
+	border-right: 2px solid #777777; /* add border-right on first nav button left */
+}
+.navbar .navbar-text {
+	color: #777777;
+	text-shadow: none;
+}
+.nav li {
+	background-color: transparent;
+	color: #777777;
+	border-radius: 0px;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	border-left: 2px solid #777777;
+}
+.nav li:first-child {
+	border: 0px; /* remove border-left on first nav button right */
+}
+/* End Navbar Styles */
+
+/* Drop Down Styles */
+.navbar .nav-collapse .nav > li > a:hover,
+.navbar .nav-collapse .nav > li > a:focus,
+.navbar .nav-collapse .dropdown-menu a:hover,
+.navbar .nav-collapse .dropdown-menu a:focus {
+	background-color: transparent;
+	text-decoration: underline;
+}
+/* End Drop Down Styles */
+/* For Responsive Things */
+/* Large desktop */
+@media (min-width: 1200px) {
+}
+/* Portrait tablet to landscape and desktop */
+@media (max-width: 979px) {
+	.nav-collapse .nav > li > a, /*override bootstrap */
+	.nav-collapse .dropdown-menu a {
+	padding: 0px 0px 0px 20px;
+	font-weight: normal;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	}
+	.nav li, .navbar .brand {
+	border: 0px solid #777777; /*hide border */
+	}
+	.nav-collapse .nav {
+	margin: 0 0 0 0;
+	}
+}
+@media (min-width: 768px) {
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	body {
+	padding: 0 0 0 0;
+	}
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.coin { /* circle resize */
+	margin: 0 auto -70px auto; /* Negative brings posts up to bottom of circle */
+	top: -58px; /* Negative brings circle up to top of page */
 	}
 
-a img {
-	border: none;
-	}
-/* End Various Tags & Classes*/
-
-
-
-/* Captions */
-.aligncenter,
-div.aligncenter {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	img.alignright {float:none; clear:both; margin: 0 auto 0 auto}
+	img.alignleft {float:none; clear:both; margin: 0 auto 0 auto}
+	a img.alignright {float:none; clear:both; margin: 0 auto 0 auto}
+	a img.alignleft {float:none; clear:both; margin: 0 auto 0 auto}
 }
-
-.wp-caption {
-	border: 1px solid #ddd;
-	text-align: center;
-	background-color: #f3f3f3;
-	padding-top: 4px;
-	margin: 10px;
-}
-
-.wp-caption img {
-	margin: 0;
-	padding: 0;
-	border: 0 none;
-}
-
-.wp-caption p.wp-caption-text {
-	font-size: 11px;
-	line-height: 17px;
-	padding: 0 4px 5px;
-	margin: 0;
-}
-/* End captions */
+/* End Responsive */

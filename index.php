@@ -1,27 +1,19 @@
-<?php
-/**
- */
-
-get_header(); ?>
-<?php include("navigation.php"); ?>
-	<div id="wrapper">
-	<div id="column">
-
-	<?php if (have_posts()) : ?> <?php while (have_posts()) : the_post(); ?>
-
-			<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
-				<h2><?php the_title(); ?></h2>
-				<div class="entry">
-					<?php the_content('Read the rest of this entry &raquo;'); ?>
-				</div> <!--End Entry-->
-			</div> <!--End Posts-->
-
-		<?php endwhile; ?>
-
-	<?php else : ?>
-		<h2 class="center">Not Found</h2>
-		<p class="center">Sorry, but you are looking for something that isn't here.</p>
-	<?php endif; ?>
-	</div> <!--End Column-->
-		<?php get_footer(); ?>
-	</div> <!--End Wrapper-->
+    <?php get_header(); ?>
+      <div class="circle coin"><i class="icon-heart-empty"></i><h1 class="title"><?php the_title(); ?></h1></div>
+        <div class="row-fluid">
+          <div class="span12">
+            <div class="border-bottom">
+            </div><!--/border-bottom-->
+          <!-- Start The Loop -->
+          <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+            <div class="border-bottom">
+              <div id="block-text">
+                <?php the_content() ?>
+              </div><!--/block-text-->
+            </div><!--/border-bottom-->
+          <?php endwhile; else: ?>
+          <?php endif; ?>
+          <!-- End the Loop -->
+          </div><!--/ .span -->
+        </div><!--/ .row -->
+      <?php get_footer(); ?>
