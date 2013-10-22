@@ -1,0 +1,317 @@
+/*
+Theme Name: HFR DESIGNS
+Theme URI: http://www.hfrdesigns.com/
+Description: An easy to use, simple, elegant website for displaying the design work of HFR Designs.
+Version: 1.0 
+Author: Kelley Kavanaugh
+Author URI: http://www.kelleykavanaugh.com/
+Tags: fixed position, black background, clean, modern, simple, etsy
+*/
+
+
+/* Begin Structure */
+#header {
+	background: url("./images/banner.jpg") no-repeat;
+	width: 915px;
+	height: 125px;
+	display: block;
+	}
+#title {
+	background-image: none;
+	margin: 0 0 0 0;
+	padding: 25px 0 0 0;
+	text-align: center;
+	font-family: "CenturyGothic", "Century Gothic";
+	font-size: 60px;
+	font-weight: bold;
+	}
+
+#description {
+	background-image: none;
+	margin: 0 0 0 0;
+	padding: 50px 0 0 0;
+	text-align: center;
+	font-family: "CenturyGothic", "Century Gothic";
+	font-size: 36px;
+	}
+body {
+	margin: 0 0 0 0;
+	padding: 0;
+	}
+
+#page {
+	margin: auto;
+	margin-top: 0px;
+	padding: 0;
+	width: 915px;
+	border: 0px solid #F00;
+	}
+
+#navigation {
+	background: url("./images/navigation.jpg") no-repeat;
+	border: 0px solid #F00;
+	text-transform: lowercase;
+	float: left;
+	padding: 0px 0 0 0;
+	margin: 0px 0px 0px 0px;
+	width: 915px;
+	height: 32px;
+	text-align: center;
+	font-family: "CenturyGothic", "Century Gothic";
+	font-size: 24px;
+	font-weight: none;
+	}
+#navigation a {
+	text-decoration: none;
+	}
+#navigation a:hover {
+	color: #FFF;
+	text-decoration: underline;
+	}
+#wrapper {
+	background: url("./images/background.jpg");
+	color: #FFF;
+	width: 915px;
+	float: left;
+	border: 0px solid #F00;
+	margin: 0 auto 0 auto;
+	clear: both;
+	}
+#logo {
+	background-image: url("./images/logo.png")
+	width: 334px;
+	height: 334px;
+	margin: 0 0 0 0;
+	border: 1px solid #F00;
+	}
+#column {
+	background: url("./images/column.png");
+	border: 0px solid #fcff00;
+	color: #000;
+	float: left;
+	text-align: justify;
+	margin: 40px 0px 0px 130px;
+	padding: 30px 30px 30px 30px;
+	width: 600px;
+	}
+#column_wide {
+	background: url("./images/column.png");
+	border: 0px solid #fcff00;
+	color: #000;
+	float: left;
+	text-align: justify;
+	margin: 40px 0px 0px 77.5px;
+	padding: 30px 30px 30px 30px;
+	width: 700px;
+	}
+#footer {
+	background: none;
+	border: 0px solid #F00;
+	color: #000;
+	float: left;
+	padding: 20px 0 0 0;
+	margin: 0px 0px 0px 0px;
+	width: 915px;
+	height: 32px;
+	text-align: center;
+	font-family: "CenturyGothic", "Century Gothic";
+	font-size: 24px;
+	font-weight: none;
+	}
+#footer a {
+	color: #000;
+	text-decoration: none;
+	}
+#footer a:hover {
+	color: #000;
+	text-decoration: underline;
+	}
+/* End Structure */
+
+
+/* Begin Typography & Colors */
+body {
+	font-size: 62.5%; /* Resets 1em to 10px */
+	line-height: 1.6em;
+	font-family: "MyriadPro-Condensed", "Myriad Pro Condensed", "MyriadPro-regular", "Myriad Pro Regular", MyriadPro, "Myriad Pro", Helvetica, Arial, sans-serif;
+	background: #000;
+	color: #FFF;
+	text-align: center;
+	}
+
+#page {
+	background-color: #000;
+	border: 0px solid;
+	text-align: left;
+	font-size: 1.5em;
+	}
+h2 {
+	color: #000;
+	font-size: 1.5em;
+	margin: 0 0 10px 0;
+	text-align: center;
+	}
+small {
+	font-family: "MyriadPro-Regular", "Myriad Pro Regular", MyriadPro, "Myriad Pro", Helvetica, Arial, sans-serif;
+	font-size: 0.9em;
+	line-height: 1.5em;
+	}
+a, a:hover, a:visited, a:active {
+	color: #FFF;
+	}
+
+/* End Typography & Colors */
+
+
+/* Begin Images */
+p img {
+	padding: 0;
+	max-width: 100%;
+	}
+
+/*	Using 'class="alignright"' on an image will (who would've
+	thought?!) align the image to the right. And using 'class="centered',
+	will of course center the image. This is much better than using
+	align="center", being much more futureproof (and valid) */
+
+img.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+img.alignright {
+	padding: 4px;
+	margin: 0 0 2px 7px;
+	display: inline;
+	}
+
+img.alignleft {
+	padding: 4px;
+	margin: 0 7px 2px 0;
+	display: inline;
+	}
+
+.alignright {
+	float: right;
+	}
+
+.alignleft {
+	float: left;
+	}
+/* End Images */
+
+
+
+/* Begin Lists
+
+	Special stylized non-IE bullets
+	Do not work in Internet Explorer, which merely default to normal bullets. */
+
+html>body .entry ul {
+	margin-left: 0px;
+	padding: 0 0 0 30px;
+	list-style: none;
+	padding-left: 10px;
+	text-indent: -10px;
+	}
+
+html>body .entry li {
+	margin: 7px 0 8px 10px;
+	}
+
+.entry ul li:before {
+	content: "\00BB \0020";
+	}
+
+.entry ol {
+	padding: 0 0 0 35px;
+	margin: 0;
+	}
+
+.entry ol li {
+	margin: 0;
+	padding: 0;
+	}
+
+.postmetadata ul, .postmetadata li {
+	display: inline;
+	list-style-type: none;
+	list-style-image: none;
+	}
+/* End Entry Lists */
+
+
+/* Begin Various Tags & Classes */
+acronym, abbr, span.caps {
+	cursor: help;
+	}
+
+acronym, abbr {
+	border-bottom: 1px dashed #999;
+	}
+
+blockquote {
+	margin: 15px 30px 0 10px;
+	padding-left: 20px;
+	border-left: 5px solid #ddd;
+	}
+
+blockquote cite {
+	margin: 5px 0 0;
+	display: block;
+	}
+
+.center {
+	text-align: center;
+	}
+
+.hidden {
+	display: none;
+	}
+	
+.screen-reader-text {
+     position: absolute;
+     left: -1000em;
+}
+
+hr {
+	display: none;
+	}
+
+a img {
+	border: none;
+	}
+/* End Various Tags & Classes*/
+
+
+
+/* Captions */
+.aligncenter,
+div.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption {
+	border: 1px solid #ddd;
+	text-align: center;
+	background-color: #f3f3f3;
+	padding-top: 4px;
+	margin: 10px;
+}
+
+.wp-caption img {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+
+.wp-caption p.wp-caption-text {
+	font-size: 11px;
+	line-height: 17px;
+	padding: 0 4px 5px;
+	margin: 0;
+}
+/* End captions */
