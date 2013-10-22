@@ -30,9 +30,12 @@ body {
 	line-height: 22px;
 }
 h1 {
+	text-transform: uppercase;
+	font-family: 'Fenix', serif;
 	text-align: center;
 }
 h2, h3, h4, h5, h6 {
+	font-family: 'Fenix', serif;
 	font-weight: normal;
 	padding: 0 0 0 0;
 	margin: 0 0 0 0;
@@ -102,18 +105,18 @@ a:hover {
 	margin-bottom: 30px;
 	clear: both;
 }
-#sidebar li.widget {
+#widgetized li.widget {
    list-style: none;
    padding: 0 0 0 0;
 }
 #footer {
-	color: #777777;
+	color: #000000;
 	height: 20px;
 	padding: 0px 0px 0px 0px;
-	margin: 0px 20px 0px 20px;
+	margin: 0px 0px 0px 0px;
 }
 #footer a, #footer a:hover, #footer a:active, #footer a:visited {
-	color: #777777;
+	color: #000000;
 }
 #footer a:hover {
 	text-decoration: underline;
@@ -191,6 +194,10 @@ a:hover {
 /* For Responsive Things */
 /* Large desktop */
 @media (min-width: 1200px) {
+	.container-fluid {
+	max-width:1200px;
+	margin: 0 auto 0 auto;
+	}
 }
 /* Portrait tablet to landscape and desktop */
 @media (max-width: 979px) {
@@ -203,7 +210,7 @@ a:hover {
 	border-radius: 0px;
 	}
 	.nav li, .navbar .brand {
-	border: 0px solid #777777; /*hide border */
+	border: 0px solid #000000; /*hide border */
 	}
 	.nav-collapse .nav {
 	margin: 0 0 0 0;
@@ -213,20 +220,8 @@ a:hover {
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-	body {
-	padding: 0 0 0 0;
-	}
 }
 /* Landscape phones and down */
 @media (max-width: 480px) {
-	.coin { /* circle resize */
-	margin: 0 auto -70px auto; /* Negative brings posts up to bottom of circle */
-	top: -58px; /* Negative brings circle up to top of page */
-	}
-
-	img.alignright {float:none; clear:both; margin: 0 auto 0 auto}
-	img.alignleft {float:none; clear:both; margin: 0 auto 0 auto}
-	a img.alignright {float:none; clear:both; margin: 0 auto 0 auto}
-	a img.alignleft {float:none; clear:both; margin: 0 auto 0 auto}
 }
 /* End Responsive */
