@@ -1,7 +1,6 @@
                 <div id="footer">
                     <div class="row-fluid">
                         <div class="span12">
-
                             <div class="pull-left">
                                 <small><em><strong><a href="http://wordpress.org/">Wordpress</a></strong> Theme by <strong><a href="http://www.kelleykavanaugh.com/">Kelley Kavanaugh</a></strong>
                             </div><!--/. pull-left-->
